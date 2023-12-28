@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM event 객체</title>
+  <style>
+    #container {
+      width:300px;
+      margin:10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="images/cup-1.png" id="cup">		
+  </div>
+
+	<script>
+    var cup = document.querySelector("#cup"); // id = "cup" 
+    cup.onclick = AlertSrc; // 함수가 하나라면 그냥 function 파트를 바로 이어버려도 된다.
+                             // e.g. cup.onclick = function() {...}
+    
+    function ChangePic() {
+      cup.src = "images/cup-2.png"
+    }
+
+    function AlertSrc() {
+      alert("현재 이미지 파일 경로는 " + this.src) // this : 이벤트가 발생한 대상에 접근하는 예약어
+    }
+
+
+	</script>
+</body>
+</html>

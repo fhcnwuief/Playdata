@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경색</title>
+    <style>
+        /*
+        body{
+            background-image: url('images/bg1.jpg');
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+        #container {
+            height: 50vh;
+        }
+        ul {
+            list-style: none;
+            margin-left: -30px;
+        }
+        li {
+            background-image: url('images/book-icon.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 50px;
+            line-height: 40px;
+        }
+        */
+        body {
+            background-image: url('images/bg2.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+        }
+        div {
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            border: 20px solid rgba(204, 204, 204, 0.493);
+            margin-bottom: 20px;
+            overflow: auto;
+            background-image: url('images/bg3.png');
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        #bg1 {
+            background-origin: padding-box;
+        }
+        #bg2 {
+            background-origin: border-box;
+        }
+        #bg3 {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <div id = "container">
+        <h1>배경 꾸미기</h1>
+    </div>
+    <h1>이지스퍼블리싱</h1>
+    <ul>
+        <li>회사 소개</li>
+        <li>도서</li>
+        <li>자료실</li>
+        <li>질문답변</li>
+        <li>동영상 강의</li>
+    </ul>
+        <hr>
+    -->
+    <div id="bg1">
+        <h2>Lorem, ipsum.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem at cum optio pariatur ad odit, molestiae sed ducimus asperiores quas eveniet omnis odio, obcaecati, eligendi eius ut possimus ratione ab!</p>
+    </div>
+    <div id="bg2">
+        <h2>Lorem, ipsum.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem at cum optio pariatur ad odit, molestiae sed ducimus asperiores quas eveniet omnis odio, obcaecati, eligendi eius ut possimus ratione ab!</p>
+    </div>
+    <div id="bg3">
+        <h2>Lorem, ipsum.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem at cum optio pariatur ad odit, molestiae sed ducimus asperiores quas eveniet omnis odio, obcaecati, eligendi eius ut possimus ratione ab!</p>
+    </div>
+
+</body>
+</html>

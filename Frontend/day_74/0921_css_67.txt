@@ -1,0 +1,37 @@
+<6장>
+[CSS 기본 선택자]
+* : 전체 선택자
+태그명 : 타입 선택자
+.클라스명 : class 선택자
+#아이디명 : id 선택자
+선택자1, 선택자2,... : 그룹 선택자
+
+<7장>
+font-family : 글꼴 지정. 지정 글꼴이 없을 경우 대비해 2,3번째 글꼴까지 지정
+font-size : 절대 크기, 상대 크기(부모 요소의 글자 크기 기준), 크기(브라우저 상관없이 글자 크기), 백분율(부모요소 글자 크기 기준 백분율(%))
+    - xx-small < x-small < ...< xx-large
+    - em, rem, ex, px, pt
+
+[웹 폰트]
+fonts.google.com
+<style>
+    @import url ('')
+    ...{
+        font-family : '폰트명';
+    }
+</style>
+
+[폰트 색]
+color:
+    - 색상이름 표기법, hsl/hsla 표기법, 16진수 표깁ㅂ, rgb/rgba 표기법
+
+[text-aligh 속성]
+: start, end, left, right, center, justify, match-parent
+
+[line-height 속성] : 줄간격. 
+    - 숫자와 백분율 : 부모 기준
+    - 보통 글자 크기의 1.5~2배
+
+[text-decoration] : 밑줄을 긋거나 가로지르는 줄 표시, 링크의 밑줄을 없앨 때도 사용
+    - none, underline, overline, line-through
+    

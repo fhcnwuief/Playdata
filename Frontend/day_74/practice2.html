@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="05/css/register.css">
+</head>
+<body>
+    <div id = "container">
+    <h1>회원 가입을 환영합니다</h1>
+    <form action = "">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <ul id="user-info">
+                <li>
+                    <label for = "user-id">아이디</label>
+                    <input type ="text" id = "user-id" min = "4"  max = "10" placeholder="4자 - 10자 사이, 공백없이">
+                </li>
+                <li>
+                    <label for = "email">이메일</label>
+                    <input type = "email" id = "email">
+                </li>
+                <li>
+                    <label for = "user-pw">비밀번호</label>
+                    <input type = "password" id = "user-pw" placeholder="문자와 숫자, 특수 기호 포함" >
+                </li>
+                <li>
+                    <label for = "user-pw-check">비밀번호 확인</label>
+                    <input type = "password" id = "user-pw-check">
+                </li>
+                <li>
+                    <label for = "route">가입 경로</label>
+                    <select id = "from_option">
+                        <option value="blog">블로그</option>
+                        <option value="search">검색</option>
+                        <option value="SNS">SNS</option>
+                        <option value="etc">기타</option>
+                    </select>
+                </li>
+                <li>
+                    <label for = "memo">메모</label>
+                    <textarea id = "memo" cols = "40" rows = "5" placeholder="남길 말씀이 있다면 여기에"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <label><input type = "radio" name = "email-ag" value = "yes">메일 수신</label> 
+            <label><input type = "radio" name = "email-ag" value = "no">메일 수신 거부</label>
+        </fieldset>
+        <div id = "buttons">
+        <input type = "submit" value = "가입하기">
+        <input  type = "reset" value = " 취소">
+        </div id = "buttons">
+        </fieldset>
+    </form>
+    </div id = "container">
+</body>
+</html>

@@ -1,0 +1,48 @@
+<11장>
+[변형(transform) 알아보기]
+2차원 변형 : 수평, 수직으로 웹 요소 변형. 크기나 각도만 지정. 
+3차원 변형 : x축과 y축에 원근감 추가. z축은 앞뒤로 이동. 다가올 수록 값이 더 커짐.
+
+translate 함수 : 지정한 방향으로 이동할 거리 지정 --> 요소를 이동
+    - transform : translate(tx, ty)
+    - transform : translate3d(tx, ty, tz)
+    - transform : translateX(tx)
+    - transform : translateY(ty)
+    - transform : translateZ(tz)
+
+scale 함수 : 지정 크기만큼 확대/축소
+    - transform : scale(sx, sy)
+    - transform : scale3d(sx, sy, sz)
+    - transform : scaleX(sx)
+    - transform : scaleY(sy)
+    - transform : scaleZ(sz)
+
+2차원 rotate 함수 : 일반 각도(degree)나 래디안(radian)값 사용.
+
+3차원 rotate 함수 
+    - perspective 속성 : 원근감을 표현. 원래 있던 위치에서 사용자가 있는 쪽으로 얼마나 이동하는지 나타냄.
+        - 값(픽셀단위)은 0보다 커야 하며 값이 클수록 사용자로부터 멀어짐
+        - perspective 속성은 변형하는 요소의 부모 요소에 정의
+
+    - transform : rotate(rx, ry, 각도)
+    - transform : rotate3d(rx, ry, rz, 각도)
+    - transform : rotateX(각도)
+    - transform : rotateY(각도)
+    - transform : rotateZ(각도)
+
+skew 함수 : 지정 각도만큼 비틀어 왜곡
+    - transform : skew(x각도, y각도)
+    - transform : skewX(x각도)
+    - transform : skewY(y각도)
+
+[트랜지션 알아보기]
+트랜지션(transition) : 웹 요소의 스타일 속성이 조금씩 자연스럽게 바뀌는 것
+    - transition-property: 대상 지정. all|none|속성이름
+    - transition-duration : 실행할 시간 지정. seconds/milliseconds. 쉼표로 구분
+    - transition-timing-function : 시작과 중간, 끝에서의 속도 지정. 
+        - linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n). n = 0~1
+    - transition-delay : 지연 시간 지정. 기본값 0
+    - transition : 위의 속성을 한꺼번에 정한다.
+        - transition: <transition-property 값> | <transition-duration 값> | <transition-timing-function 값> | <transition-delay 값>
+    
+[애니메이션 알아보기]

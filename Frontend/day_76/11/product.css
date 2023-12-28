@@ -1,0 +1,43 @@
+#container {
+  width:1000px;
+  margin:20px auto;
+}
+h1 {
+  text-align:center;
+}
+.prod-list {
+  list-style:none;
+  padding:0;
+}
+.prod-list li {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+}
+.prod-list img {
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:5;
+} 
+
+.prod-list .caption {
+  position: absolute;
+  top: 250px;
+  width: 300px;
+  height: 180px;
+  padding-top: 20px;
+  background: rgba(0,0,0,0.6);
+  transition: all 0.6 ease-in-out;
+  z-index: 10;
+}
+
+.prod-list li:hover .caption {
+  opacity: 1; /*설명 글이 화면에 보이게*/
+  transform: translateY(-155px);
+}
+.prod-list .caption h2, .prod-list .caption p {
+  color: #fff;
+  text-align: center;
+}

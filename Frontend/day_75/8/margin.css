@@ -1,0 +1,22 @@
+div{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid #222;
+}
+
+#margin1 {margin: 50px;}
+#margin2 {margin: 30px 50px;}
+#margin3 {margin: 30px 20px 50px;}
+#margin4 {margin: 30px 50px 30px 50px;}
+#margin5 {margin-right: 20px;}
+
+div{
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+}
+
+#margin6 {background: rgb(0,77,243);}
+#margin7 {background: rgb(255,72,0);}
+#margin8 {background: rgb(18,219,0);}

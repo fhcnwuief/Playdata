@@ -1,0 +1,16 @@
+#wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*화면을 꽉 채울 만큼 칼럼 너비를 늘려서 표시*/
+    margin-bottom: 20px;
+}
+#wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*칼럼 최소 너비까지만 표시*/
+}
+.items {
+    padding: 10px;
+    background-color: #eee;
+}
+.items:nth-child(odd) {
+    background-color: #bbb;
+}

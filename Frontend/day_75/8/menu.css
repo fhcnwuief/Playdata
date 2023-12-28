@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 20px;
+    border: 1px solid #222;
+}
+
+img {
+    float: left;
+    margin: 40px;
+}
+
+div{
+    padding: 20px;
+    margin: 10px;
+}
+
+#box1 {
+    background: #ffd800;
+    float: left;
+}
+#box2 {
+    background: #0094ff;
+    float: left;
+}
+#box3 {
+    background: #00ff21;
+}
+#box4 {
+    background: #a874ff;
+    clear: left;
+}
+
