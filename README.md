@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Playdata_class
+# Playdata_code.zip
 2023.05.31~2023.11.29
 <br>
 <br>
@@ -20,6 +19,3 @@
 ###### day_73~day_78 : Visual Studio Code, HTML.JS.CSS. Front-end
 ###### day_79~day_88 : Pycharm,  language:python. django
 ###### day_89~day_120 : final Project about CCTV specializing in single-person households, upload at another repository
-=======
-# Playdata_code
->>>>>>> 340a252c226dd0b0a2a886181207420befecc08d
